@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music Player</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="title">🎧 My Music Library</h1>
+<input type="text" id="searchBar" placeholder="Search Singer..." onkeyup="filterSingers()">
+
+
+<div class="main-container">
+
+<div class="artists">
+
+    <div class="artist" onclick="openPlaylist('karan')">
+        <img src="karan.jpg" alt="">
+        <p>Karan Aujla</p>
+    </div>
+
+    <div class="artist" onclick="openPlaylist('parmish')">
+        <img src="parmish.jpg" alt="">
+        <p>Parmish Verma</p>
+    </div>
+
+    <div class="artist" onclick="openPlaylist('ap')">
+        <img src="ap dhillon.jpg" alt="">
+        <p>AP Dhillon</p>
+    </div>
+
+    <div class="artist" onclick="openPlaylist('diljit')">
+        <img src="diljeet.jpg" alt="">
+        <p>Diljit Dosanjh</p>
+    </div>
+
+    <div class="artist" onclick="openPlaylist('jassie')">
+        <img src="jassiegill.webp" alt="">
+        <p>Jassie Gill</p>
+    </div>
+
+    <div class="artist" onclick="openPlaylist('sidhu')">
+        <img src="sidhu.jpg" alt="">
+        <p>Sidhu Moosewala</p>
+    </div>
+
+    <div class="artist" onclick="openPlaylist('hindi')">
+        <img src="hindii.jpg" alt="">
+        <p>Hindi Songs</p>
+    </div>
+     <div class="artist" onclick="openPlaylist('mankirt')">
+        <img src="mankirt.jpg" alt="">
+        <p>Mankirt Aulakh</p>
+    </div>
+     <div class="artist" onclick="openPlaylist('gurnaam')">
+        <img src="gurnaam.jpg" alt="">
+        <p>Gurnaam Bhullar</p>
+    </div>
+     <div class="artist" onclick="openPlaylist('guri')">
+        <img src="guri.jpg" alt="">
+        <p>Guri</p>
+    </div>
+     <div class="artist" onclick="openPlaylist('akhil')">
+        <img src="akhil.jpg" alt="">
+        <p>Akhil</p>
+    </div>
+     <div class="artist" onclick="openPlaylist('brar')">
+        <img src="brar.jpg" alt="">
+        <p>Varinder Brar</p>
+    </div>
+     <div class="artist" onclick="openPlaylist('mix')">
+        <img src="mix.jpg" alt="">
+        <p>Mix Songs</p>
+    </div>
+     <div class="artist" onclick="openPlaylist('amritmaan')">
+        <img src="amrit.jpg" alt="">
+        <p>Amrit Maan</p>
+    </div>
+     <div class="artist" onclick="openPlaylist('atifaslam')">
+        <img src="atif.jpg" alt="">
+        <p>Atif Aslam</p>
+    </div>
+     <div class="artist" onclick="openPlaylist('harvisandhu')">
+        <img src="harvi.jpg" alt="">
+        <p>Harvi Sandhu</p>
+    </div>
+     <div class="artist" onclick="openPlaylist('baanisandhu')">
+        <img src="baani.webp" alt="">
+        <p>Baani Sandhu</p>
+    </div>
+     <div class="artist" onclick="openPlaylist('sunandasharma')">
+        <img src="sunanda.jpeg" alt="">
+        <p>Sunanda Sharma</p>
+    </div>
+    <div class="artist" onclick="openPlaylist('jassadhillon')">
+        <img src="jassa.jpg" alt="">
+        <p>Jassa Dhillon</p>
+    </div>
+     <div class="artist" onclick="openPlaylist('gursiddhu')">
+        <img src="gursiddhu.jpg" alt="">
+        <p>Gur Siddhu</p>
+    </div>
+     <div class="artist" onclick="openPlaylist('cheemay')">
+        <img src="cheema.webp" alt="">
+        <p>Chemma Y</p>
+    </div>
+     <div class="artist" onclick="openPlaylist('premdhillon')">
+        <img src="prem.jpg" alt="">
+        <p>Prem Dhillon</p>
+    </div>
+     <div class="artist" onclick="openPlaylist('amrinder')">
+        <img src="amrinder.jpg" alt="">
+        <p>Amrinder Gill</p>
+    </div>
+     <div class="artist" onclick="openPlaylist('khanbaini')">
+        <img src="khaanbaini.jpg" alt="">
+        <p>Khaan Baini</p>
+    </div>
+    <div class="artist" onclick="openPlaylist('dilpreetdhillon')">
+        <img src="dilpreet.jpg" alt="">
+        <p>Dilpreet Dhillon</p>
+    </div>
+</div>
+
+    <div class="playlist" id="playlistContainer">
+        <h2 id="playlistTitle"></h2>
+        <ul id="songList"></ul>
+
+
+        <div class="player">
+            <p id="currentSongName">Not playing</p>
+            <audio id="audioPlayer" controls></audio>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+
