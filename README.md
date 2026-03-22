@@ -1,3 +1,6 @@
+## Preview
+
+![Music Player Screenshot](screenshot.png)
 # 🎵 Music Player Web Application
 
 This is a simple Music Player Web Application created using HTML, CSS and JavaScript.  
